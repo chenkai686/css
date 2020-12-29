@@ -1,0 +1,30 @@
+/*重置不同浏览器原有的外边距和内边距尺寸以及内边距和边框的坑及不同浏览器的兼容性*/
+*{margin: 0;padding: 0;
+-moz-box-sizing: border-box;/*支持火狐浏览器*/
+-webkit-box-sizing: border-box;/*支持内核浏览器*/
+box-sizing: border-box;
+}
+/*重置字体样式*/
+body{font-size: 16px;font-family: "微软雅黑";color: #222222;}
+b{font-weight: normal;}
+i{font-style: normal;}
+a,a:hover,a:active{text-decoration: none;color: #222222;}
+/*重置图片轮廓及对齐方式（解决img元素相邻之间的空隙）*/
+img{border: none;vertical-align: top;}
+/*列表标志重置（取消小圆点）*/
+li{list-style: none;}
+/*防止高度塌陷*/
+.fl{float: left;}
+.fr{float: right;}
+.cl{clear: both;}
+.clearfix::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+.clearfix{
+	clear: both;
+}
+input{
+	outline: none;border: none;
+}
