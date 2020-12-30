@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>固定定位</title>
+		<link rel="stylesheet" type="text/css" href="../rest.css"/>
+		<style type="text/css">
+			.zxw-l{
+				position: fixed;
+				left: 10px;
+				top: 120px;
+			}
+			.zxw-r{
+				position: fixed;
+				right: 30px;
+				top: 250px;
+			}
+		</style>
+	</head>
+	<body>
+		<!--固定定位：
+				1.指定元素固定定位后：元素就是一个定位元素，完全脱离文档流
+				2.原来的位置不会保留
+				3.固定定位时相对于浏览器进行定位，注意不是相对于body元素进行定位-->
+		<img width="100%" src="img/zxw01.jpg"/>
+		<img class="zxw-l" src="img/zxw-l.png"/>
+		<img class="zxw-r" src="img/zxw-r.png"/>
+	</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>高度塌陷</title>
+		<link rel="stylesheet" type="text/css" href="../rest.css"/>
+		<style type="text/css">
+			ul{
+				width: 302px;border: 1px solid red;margin: 50px auto;
+			}
+			ul::after{
+				content: "";
+				display: block;
+				clear: both;
+			}
+			.a,.b,.c{width: 100px;height: 100px;float: left;}
+			.a{background: #008000;}
+			.b{background: blue;}
+			.c{background: orange;}
+			/*.d{background: #0000FF; clear: both;}*/
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li class="a"></li>
+			<li class="b"></li>
+			<li class="c"></li>
+			<!--<li class="d"></li>-->
+		</ul>
+	</body>
+</html>

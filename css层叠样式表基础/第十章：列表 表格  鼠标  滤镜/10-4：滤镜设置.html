@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>滤镜设置</title>
+		<link rel="stylesheet" type="text/css" href="../rest.css"/>
+		<style type="text/css">
+			div{
+				width: 500px;background: #FF0000;
+			}
+			
+			img{
+				width: 100%;
+				/*-webkit-filter: blur(1px);*/
+				/*filter: saturate(0%);*/
+				/*filter: grayscale(80%);*/
+				/*filter: contrast(150%);*/
+				filter: opacity(50%);
+				
+			}
+			/*注意:所有的IE浏览器都不支持滤镜
+			     老版本谷歌和欧朋浏览器要加前缀:-webkit-*/
+		</style>
+	</head>
+	<body>
+		<!--滤镜属性：定义图像的可视效果
+			语法：filter：属性值；
+			1.高斯模糊：filter：blur（合法的尺寸单位）
+			默认值：0，值越大图像越模糊
+			不能设置百分比
+			2.饱和度设置：filter：saturate（百分比）；
+			默认值100%,0%黑白图像
+			大于100%饱和度越高-->
+			<!--3.灰度设置：filter：grayscale（百分比）
+			默认值0%，值：0%-100%之间-->
+			<!--4.对比度设置：filter：contrast（百分比）
+			默认值100%，值为0%时图像会变成全黑
+			超过100%时运用更低的对比度-->
+			<!--5.透明度设置：filter：opacity；-->
+			<!--默认值100%，表示完全不透明，0%表示完全透明-->
+			<!--值：0%-100%之间-->
+
+			
+		<div>
+			<img src="../第七章：背景样式属性/img/pk.jpg"/>
+		</div>	
+		
+	</body>
+</html>

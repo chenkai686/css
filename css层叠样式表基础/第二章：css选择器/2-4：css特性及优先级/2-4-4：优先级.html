@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>优先级</title>
+		<style type="text/css">
+			div{color: red;}
+			*{color: blue;}
+			span{color: yellow;}
+			a{color: saddlebrown;}
+			.chr{color: chartreuse;}
+			.ht{color: crimson;}
+			.chr{color: #8A2BE2;}
+			#qwe{color: darkred;}
+			#qwe{color: black;}
+		</style>
+	</head>
+	<body>
+		<!--优先级：
+			优先级别从低到高：继承性-通用选择器-标签选择器-类选择器-id选择器-行内选择器
+			选的越精确，优先级别越高
+			当有优先级别相同时，后写的样式会覆盖先写的样式-->
+		<div>
+			<a href="" id="qwe" class="chr" style="color: darkmagenta;">我要自学网1</a>
+			<br />
+			<span class="chr ht">我要自学网2</span>
+		</div>
+	</body>
+</html>

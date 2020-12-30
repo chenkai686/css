@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>溢出隐藏</title>
+		<style type="text/css">
+			div{
+				width: 500px;height: 300px;background: #008000;
+				/*overflow: visible;*/
+				/*overflow: hidden;*/
+				/*overflow: scroll;*/
+				overflow: auto;
+			}
+		</style>
+	</head>
+	<body>
+		溢出隐藏：
+				<!--overflow属性：规定内容溢出元素框时出现的情况
+				值：
+					visible：当内容超过元素框时，内容正常显示，不会被修剪，默认值
+					hidden：当内容超过元素框时，内容被修剪，溢出的部分不会显示
+					scroll：当内容超过元素框时，内容被修剪，会显示滚动条，以便查看被隐藏的部分
+					auto： 当内容超过元素框时，内容被修剪，会显示滚动条，以便查看被隐藏的部分，当内容小于元素框时，不会显示滚动条-->
+		<div>
+			<img width="300"height="200" src="../第五章：文本属性/img/logo.jpg"/>
+		</div>
+	</body>
+</html>

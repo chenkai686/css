@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>相对定位</title>
+		<link rel="stylesheet" type="text/css" href="../rest.css"/>
+		<style type="text/css">
+			.try{
+				width: 500px;height: 500px;border: solid 1px red;margin: 10px auto;
+				position: relative;
+			}
+			.box{
+				width: 302px;height: 302px;margin: 50px auto;border: 1px solid #FF0000;
+				/*position: relative;*/
+			}
+			.pst1,.pst2,.pst3{
+				width: 100px;height: 100px;
+			}
+			.pst1{background: #8A2BE2;}
+			.pst2{background: #FF0000;
+					position: absolute;
+					left: -50%;
+					bottom: -50%;
+			}
+			.pst3{background: green;}
+		</style>
+	</head>
+	<body>
+		<!--绝对定位：position：absolute；
+				指定了绝对定位后，元素就是一个定位元素，完全脱离文档流
+				原来的位置不会保留
+				绝对定位是相对于最近的父级元素中有定位属性的元素作为对象进行偏移，按照层级关系会一直找到body元素-->
+				
+		<div class="try">
+			<div class="box">
+				<div class="pst1"></div>
+				<div class="pst2"></div>
+				<div class="pst3"></div>
+			</div>
+		</div>
+	</body>
+</html>

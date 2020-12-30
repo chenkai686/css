@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>垂直对齐方式</title>
+		<style type="text/css">
+			.a{
+				font-size: 40px;background: #0000FF;
+				/*vertical-align: middle;*/
+			}
+			.b{
+				font-size: 20px;background: #A52A2A;
+				/*vertical-align: baseline;*/
+				/*vertical-align: sub;*/
+				/*vertical-align: super;*/
+				/*vertical-align: top;*/
+				/*vertical-align: bottom;*/
+				/*vertical-align: middle;*/
+				vertical-align: text-top;
+				/*vertical-align: text-bottom;*/
+				
+			}
+		</style>
+	</head>
+	<body>
+		<!--垂直对齐方式：对行级元素，行内块级元素，表格元素有效
+				vertical-align：输入相关值；
+				值：
+					1.baseline：默认值，对齐父元素基线
+					
+					
+					2.sub：对齐下标
+					3.super：对齐上标
+					4.top：顶部对齐
+					5.bottem：底部对齐
+					6.middle：垂直居中对齐
+					
+					7.text-top
+					8.text-bottom-->
+					
+		
+		<div>
+			<span class="a">19.9</span>
+			<span class="b">元</span>
+		</div>
+	</body>
+</html>

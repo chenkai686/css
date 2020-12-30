@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>层级</title>
+		<link rel="stylesheet" type="text/css" href="../rest.css"/>
+		<style type="text/css">
+			.box{
+				width: 302px;height: 302px;border: 1px solid red;margin: 50px auto;
+				position: relative;
+			}
+			.pst1,.pst2,.pst3,.pst4,.pst5{
+				width: 100px;height: 100px;
+			}
+			.pst1{background: #000080; position: absolute;
+					/*left: 50px;
+					top: 50px;*/
+					z-index: 4;
+			}
+			.pst2{background: #008000;position: absolute;
+				left: 50px;
+				top: 50px;
+				z-index: 3;
+			}
+			.pst3{background: orangered;position: absolute;
+					left: 100px;
+					top: 100px;
+					z-index:2;
+			}
+			.pst4{
+				background: aqua;position: absolute;
+				left: 150px;
+				top: 150px;
+				z-index: 1;	
+			}
+			.pst5{
+				background: brown;position: absolute;
+				left: 200px;
+				top: 200px;
+			}
+		</style>
+	</head>
+	<body>
+		<!--层级：z-index：值（阿拉伯数字）；
+			1.每一个定位元素会独占一行
+			2.改变层级来改变定位元素
+			3.当层级一样，后写的元素会覆盖先写的元素，后来者居上--> 
+		<div class="box">
+			<div class="pst1"></div>
+			<div class="pst2"></div>
+			<div class="pst3"></div>
+			<div class="pst4"></div>
+			<div class="pst5"></div>
+		</div>
+	</body>
+</html>

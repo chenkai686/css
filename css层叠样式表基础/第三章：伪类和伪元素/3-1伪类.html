@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>伪类</title>
+		<style type="text/css">
+			a:link{
+				color: firebrick;
+			}
+			a:visited{
+				color: darkorchid;
+			}
+			.fg:hover{
+				color: blue;font-size: 30px;font-weight: 600;
+			}
+			#user:focus{
+				color: darkblue;
+			}
+			.fg:active{
+				color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<!--伪类：元素不同状态所表现出不同的样式
+			1.静态伪类：只能用于超链接元素
+				link：超链接点击之前的样式
+				visited：超链接点击之后的样式
+			2.动态伪类：适用于所有元素
+				hover：鼠标放在元素上时呈现出的样式，是最常用的状态样式
+				active：鼠标点击元素没有松开时的状态，用的不多
+				focus：输入框在获得焦点或输入文本时的状态-->
+			
+					
+		<a href="https://www.baidu.com">百度一下</a>
+		<a class="fg" href="https://www.taobao.com">淘宝网</a>
+		<form action="" method="post">
+			<input type="text" name="user" id="user" placeholder="请输入..." />
+			<input type="submit" value="确认"/>
+		</form>
+	</body>
+</html>

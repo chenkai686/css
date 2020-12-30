@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>外边距踩坑</title>
+		<style type="text/css">
+			div{
+				/*vertical-align: top;*/vertical-align: bottom;
+			}
+			.gt{
+				height: 200px;width: 200px; background: #8A2BE2 url(../第七章：背景属性/img/ter.jpg) no-repeat 50% 50%/100% 100% scroll;margin-top:0px;margin-bottom: 0px; display: inline-block;
+				margin-right: 50px;border-radius: 50px;
+				
+			}
+			.gs{
+				height: 200px;width: 200px; background: #8A2BE2 url(../第七章：背景属性/img/ter.jpg) no-repeat 50% 50%/100px 100px scroll;margin-top: 80px;margin-bottom: 0px;
+				margin-left: 50px;display: inline-block;border-radius: 50px;
+				
+			}
+			
+		</style>
+	</head>
+	<body>
+		<!--边框踩坑：
+				1.元素上下排列时，上下外边距会合并，取最大值。
+				2.元素左右排列时，左右外边距会叠加，左右外边距两个值相加
+				3.行级元素只有左右外边距，没有上下外边距
+				4.块级元素和行内块级元素的外边距4个方向都有效-->
+		<div class="rt" style="height: 200px;background: #008000; margin-bottom:0px ;"></div>
+		<div class="gt"></div>
+		<div class="gs"></div>
+		<div class="ck" style="height: 200px;background: #008000; margin-bottom:0px ; clear: left;"></div>
+	</body>
+</html>

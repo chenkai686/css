@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!--<link rel="stylesheet" type="text/css" href="../rest.css"/>-->
+		<style type="text/css">
+			*{margin: 0;}
+			.box{
+				width: 300px;border: 2px solid black;margin: 0 auto;
+			}
+			.a,.b,.c{
+				width: 100px;height: 100px;float: left;
+			}
+			.a{background: #8A2BE2;}
+			.b{background: #00008B;}
+			.c{background: #DC143C;}
+			.clearfix::after{
+				content: "";
+				display: block;
+				clear: both;
+			}
+			#df{width: 300px;height: 100px;background: #FF69B4;margin: auto;}
+		</style>
+	</head>
+	<body>
+		<div id="df">
+			
+		</div>
+		<div class="box clearfix">
+			<div class="a"></div>
+			<div class="b"></div>
+			<div class="c"></div>
+		</div>
+	</body>
+</html>

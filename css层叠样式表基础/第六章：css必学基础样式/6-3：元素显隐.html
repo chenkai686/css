@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>元素显隐</title>
+		<style type="text/css">
+			div{
+				font-size: 50px;font-weight: 700;color: #8A2BE2;
+				text-shadow: 3px 3px 3px black;text-align: center;
+				background: #DAA520;
+				display: none;
+				
+			}
+			a div:hover{
+				color: #FFFFFF;
+			}
+			a{display: block;text-decoration: none;}
+			span{
+				font-size: 50px;font-weight: 700;color: #00BFFF;
+				text-shadow: 3px 3px 3px #000000;background: #556B2F;
+				text-decoration: none;text-align: center;
+				display: block;
+			}
+			span:hover{
+				color: #FFFFFF;
+			}
+		</style>
+	</head>
+	<body>
+		<!--元素显隐：
+			1.元素隐藏：display：none
+				页面结构仍然存在
+				元素所占空间会被藏
+			2。元素显示：
+				display：block;块级元素显示
+				display：inline;行级元素显示
+				display:inline-block;行内块级元素显示-->
+		<a href="https://www.baidu.com" title="点击浏览网页">
+			<div>我要自学网1</div>
+		</a>
+		<a href="http://www.2345.com" title="点击浏览网址">
+			<span>我要自学网2</span>
+		</a>
+	</body>
+</html>

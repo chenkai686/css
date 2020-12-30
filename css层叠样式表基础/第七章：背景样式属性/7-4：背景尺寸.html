@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>背景尺寸</title>
+		<style type="text/css">
+			div{
+				width: 300px;height: 300px;
+				background-color: #8A2BE2;
+				background-image: url(img/flower.jpg);
+				background-repeat: no-repeat;
+				background-size: 50% 100%;
+				background-size: contain;
+				background-size: cover;
+				background-size: 150px;
+			}
+		</style>
+	</head>
+	<body>
+		<!--背景尺寸：
+			background-size：宽度    高度；
+			使用尺寸单位时，背景图片的宽高是个固定的值
+			使用%时，是以背景图片所在当前元素背景的宽高来设置背景图片的宽高
+			contain：把背景图片扩展至最大尺寸，并使宽度或高度适应内容区域，但会保持原有的宽高比列
+			cover：将背景图片按比列扩展至足够大使其覆盖整个元素背景区域
+			当只设置一个值时，第二个值默认是auto，会保持原来的宽高比列-->
+		<div></div>
+	</body>
+</html>

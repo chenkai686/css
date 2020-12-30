@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>内边距和边框踩坑以及box-sizing属性</title>
+		<style type="text/css">
+			div{
+				vertical-align: top;
+			}
+			.a{
+				width: 200px;height: 200px;background: #8A2BE2;
+				padding: 30px;border: 3px #FF0000 solid;
+				display: inline-block;box-sizing: border-box;
+				border-radius: 30px;
+			}
+			.b{
+				width: 200px;height: 200px;background: #8A2BE2;
+				/*padding: 30px;border: 3px #FF0000 solid;*/
+				display: inline-block;
+				border-radius: 30px;
+				text-align: center;	padding-top:50px ;
+				box-sizing: border-box;
+			}
+			.img-a,.img-b{
+				border-radius: 30px;
+			}
+			
+				
+			
+		</style>
+	</head>
+	<body>
+		<div class="a">
+			<img class="img-a" width="100%" height="100%" src="../第七章：背景属性/img/ter.jpg"/>
+		</div>
+		<div class="b">
+			<img class="img-b"src="../第七章：背景属性/img/ter.jpg"/>
+		</div>
+	</body>
+</html>
